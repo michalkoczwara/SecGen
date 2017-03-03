@@ -26,5 +26,5 @@
     <value>10</value>
   </default_input>
 
-  <output_type>string</output_type>
+  <output_type>encoded_strings</output_type>
 </encoder>
