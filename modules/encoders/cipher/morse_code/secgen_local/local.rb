@@ -6,7 +6,7 @@ class MorseCodeEncoder < StringEncoder
   def initialize
     super
     self.module_name = 'Morse Code Encoder'
-    self.strings_to_encode = ['This is a string', 'flag{example}', '£500 pounds']
+    self.strings_to_encode = []
 
     self.morse_code_hash = {'a' => '.-',
                             'b' => '-...',
