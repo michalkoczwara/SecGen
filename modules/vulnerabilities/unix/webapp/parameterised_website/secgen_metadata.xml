@@ -24,6 +24,7 @@
   <read_fact>employees</read_fact>
   <read_fact>product_name</read_fact>
   <read_fact>main_page_paragraph_content</read_fact>
+  <read_fact>test_image_leak</read_fact>
 
   <!-- Team Project markers, generate and host an acceptable use policy on a basic website. -->
   <read_fact>host_acceptable_use_policy</read_fact>

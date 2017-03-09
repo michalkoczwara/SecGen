@@ -54,4 +54,10 @@ class parameterised_website::install {
     ensure  => file,
     content => template('parameterised_website/contact.html.erb'),
   }
+
+  $image_contents = $secgen_parameters['test_image_leak'][0]
+  file { "$docroot/test_image.jpg":
+    ensure => file,
+    content => base64('decode', $image_contents)
+  }
 }
