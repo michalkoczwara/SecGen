@@ -6,7 +6,7 @@
   <name>Random Image Generator</name>
   <author>Thomas Shaw</author>
   <module_license>MIT</module_license>
-  <description>Selects and outputs random image from the lib/resources/images directory.</description>
+  <description>Selects and outputs random image from the lib/resources/images directory in base64 format.</description>
 
   <type>image_generator</type>
   <type>random_image</type>
