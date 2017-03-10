@@ -5,11 +5,10 @@ class BinaryEncoder < StringEncoder
   def initialize
     super
     self.module_name = 'Binary Encoder'
-    self.strings_to_encode = []
   end
 
   def encode(str)
-    str.unpack('B*')
+    str.unpack('B*').first
   end
 end
 

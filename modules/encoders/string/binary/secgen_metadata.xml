@@ -8,6 +8,7 @@
   <module_license>MIT</module_license>
   <description>Converts String to Binary.</description>
 
+  <type>binary_encoder</type>
   <type>string_encoder</type>
   <platform>linux</platform>
   <platform>windows</platform>
