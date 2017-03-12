@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<scenario xmlns="http://www.github/cliffe/SecGen/scenario"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.github/cliffe/SecGen/scenario">
+
+  <!-- an example remote storage system, with a remotely exploitable vulnerability that can then be escalated to root -->
+  <system>
+    <system_name>storage_server</system_name>
+    <base platform="linux"/>
+
+    <!-- 1) Working example -->
+    <input into="test_image_leak_1">
+      <generator type="hidden_data_in_image_file">
+        <input into="strings_to_leak">
+          <encoder type="binary_encoder">
+            <input into="strings_to_encode">
+              <generator type="flag_generator"/>
+            </input>
+          </encoder>
+        </input>
+      </generator>
+    </input>
+
+    <!-- 2) Uses defaults with broken module nesting. -->
+    <input into="test_image_leak_2">
+      <generator type="hidden_data_in_image_file"/>
+    </input>
+
+    <network type="private_network" range="dhcp"/>
+  </system>
+
+</scenario>

@@ -26,13 +26,11 @@
   </default_input>
 
   <default_input into="strings_to_leak">
-    <generator type="flag_generator"/>
-    <!--TODO: Look into why this doesn't work.-->
-    <!--<encoder type="binary_encoder">-->
-      <!--<input into="strings_to_encode">-->
-        <!--<generator type="flag_generator"/>-->
-      <!--</input>-->
-    <!--</encoder>-->
+    <encoder type="binary_encoder">
+      <input into="strings_to_encode">
+        <generator type="flag_generator"/>
+      </input>
+    </encoder>
   </default_input>
 
   <output_type>generated_strings</output_type>
