@@ -27,6 +27,10 @@
       <generator type="hidden_data_in_image_file"/>
     </input>
 
+    <input into="test_image_leak_2">
+      <generator type="hidden_data_in_image_file"/>
+    </input>
+    
     <network type="private_network" range="dhcp"/>
   </system>
 
