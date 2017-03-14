@@ -21,9 +21,9 @@
   <read_fact>base64_image</read_fact>
   <read_fact>strings_to_leak</read_fact>
 
-<!--  <default_input into="base64_image">
+  <default_input into="base64_image">
     <generator type="random_image"/>
-  </default_input>-->
+  </default_input>
 
   <default_input into="strings_to_leak">
     <encoder type="binary_encoder">
