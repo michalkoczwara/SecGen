@@ -108,14 +108,16 @@ class parameterised_website::install {
     leaked_from => "parameterised_website",
   }
 
-  $additional_page_pairs = zip($additional_pages, $additional_page_filenames)
-  $additional_page_pairs.each |$additional_page_pair|{
-    $additional_page_contents = $additional_page_pair[0]
-    $additional_page_filename = $additional_page_pair[1]
+  if $additional_pages != undef and $additional_page_filenames != undef{
+    $additional_page_pairs = zip($additional_pages, $additional_page_filenames)
+    $additional_page_pairs.each |$additional_page_pair|{
+      $additional_page_contents = $additional_page_pair[0]
+      $additional_page_filename = $additional_page_pair[1]
 
-    file { "$docroot/$additional_page_filename":
-      ensure  => file,
-      content => template('parameterised_website/page.html.erb'),
+      file { "$docroot/$additional_page_filename":
+        ensure  => file,
+        content => template('parameterised_website/page.html.erb'),
+      }
     }
   }
 }
