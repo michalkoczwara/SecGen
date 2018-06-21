@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 #production gems go here
 gem 'nokogiri'
-gem 'puppet'
+gem 'puppet', '>= 5.3.7'
 gem 'librarian-puppet'
 gem 'wordlist'
 gem 'faker'
