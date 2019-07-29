@@ -18,5 +18,5 @@ group :test, :development do
   gem 'minitest'
   gem 'rake'
   gem 'rdoc'
-  gem 'yard'
+  gem 'yard', '>= 0.9.20'
 end

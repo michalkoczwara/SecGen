@@ -59,7 +59,7 @@ GEM
     thor (0.19.1)
     wordlist (0.1.1)
       spidr (~> 0.2)
-    yard (0.8.7.6)
+    yard (0.9.20)
     zipruby (0.3.6)
 
 PLATFORMS
@@ -80,8 +80,8 @@ DEPENDENCIES
   rqrcode
   sshkey
   wordlist
-  yard
+  yard (>= 0.9.20)
   zipruby
 
 BUNDLED WITH
-   1.14.3
+   1.17.3
