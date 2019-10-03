@@ -26,14 +26,12 @@ GEM
     mini_exiftool (2.8.0)
     mini_exiftool_vendored (9.2.7.v1)
       mini_exiftool (>= 1.6.0)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.4.0)
     minitar (0.5.4)
     minitest (5.9.0)
     multipart-post (2.0.0)
-    nokogiri (1.6.8)
-      mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
-    pkg-config (1.1.7)
+    nokogiri (1.10.4)
+      mini_portile2 (~> 2.4.0)
     puppet (4.5.1)
       CFPropertyList (~> 2.2.6)
       facter (> 2.0, < 4)
@@ -71,7 +69,7 @@ DEPENDENCIES
   librarian-puppet
   mini_exiftool_vendored
   minitest
-  nokogiri
+  nokogiri (>= 1.8.3)
   puppet
   rake
   rdoc
@@ -79,9 +77,9 @@ DEPENDENCIES
   rmagick
   rqrcode
   sshkey
-  wordlist
+  wordlist (>= 0.1.1)
   yard
   zipruby
 
 BUNDLED WITH
-   1.14.3
+   1.17.3
