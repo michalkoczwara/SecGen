@@ -26,14 +26,13 @@ GEM
     mini_exiftool (2.8.0)
     mini_exiftool_vendored (9.2.7.v1)
       mini_exiftool (>= 1.6.0)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.5.1)
     minitar (0.5.4)
     minitest (5.9.0)
     multipart-post (2.0.0)
-    nokogiri (1.6.8)
-      mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
-    pkg-config (1.1.7)
+    nokogiri (1.11.4)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     puppet (4.5.1)
       CFPropertyList (~> 2.2.6)
       facter (> 2.0, < 4)
@@ -44,6 +43,7 @@ GEM
       faraday_middleware (>= 0.9.0, < 0.11.0)
       minitar
       semantic_puppet (~> 0.1.0)
+    racc (1.5.2)
     rake (11.1.2)
     rdoc (4.2.2)
       json (~> 1.4)
@@ -53,7 +53,7 @@ GEM
       chunky_png (~> 1.0)
     rsync (1.0.9)
     semantic_puppet (0.1.3)
-    spidr (0.6.0)
+    spidr (0.6.1)
       nokogiri (~> 1.3)
     sshkey (1.9.0)
     thor (0.19.1)
@@ -71,7 +71,7 @@ DEPENDENCIES
   librarian-puppet
   mini_exiftool_vendored
   minitest
-  nokogiri
+  nokogiri (>= 1.11.4)
   puppet
   rake
   rdoc
@@ -79,9 +79,9 @@ DEPENDENCIES
   rmagick
   rqrcode
   sshkey
-  wordlist
+  wordlist (>= 0.1.1)
   yard
   zipruby
 
 BUNDLED WITH
-   1.14.3
+   1.17.3
