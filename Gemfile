@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 #production gems go here
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.15.6'
 gem 'puppet'
 gem 'librarian-puppet'
-gem 'wordlist'
+gem 'wordlist', '>= 1.0.0'
 gem 'faker'
 gem 'forgery'
 gem 'redcarpet'
@@ -17,6 +17,6 @@ gem 'zipruby'
 group :test, :development do
   gem 'minitest'
   gem 'rake'
-  gem 'rdoc'
-  gem 'yard'
+  gem 'rdoc', '>= 6.3.4.1'
+  gem 'yard', '>= 0.9.35'
 end
